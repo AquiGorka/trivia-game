@@ -21,5 +21,6 @@ yarn build
 
 ```sh
 source .env
-npx surge $DOMAIN
+yarn build
+npx surge .build $DOMAIN
 ```
