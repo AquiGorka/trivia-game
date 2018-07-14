@@ -1,5 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-const View = () => 'Welcome'
+const View = props => {
+  const { mode } = props;
 
-export { View }
+  if (mode) {
+    return null;
+  }
+
+  return 'Welcome';
+};
+
+export { View };

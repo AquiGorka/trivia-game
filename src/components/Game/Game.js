@@ -1,5 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-const View = () => 'Game'
+const GAME = 'game';
 
-export { View }
+const View = props => {
+  const { mode } = props;
+
+  if (mode !== GAME) {
+    return null;
+  }
+
+  return 'GAME';
+};
+
+export { View };
