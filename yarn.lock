@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@aquigorka/flux@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@aquigorka/flux/-/flux-0.0.1.tgz#de60540026dd42f934ec9aee86116828a745cf6b"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
