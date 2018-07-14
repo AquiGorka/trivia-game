@@ -7,3 +7,51 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+#root {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+/* theme */
+header {
+  padding: 1em;
+  box-shadow: 0 0 10px 1px #CCC;
+  margin: 0;
+  text-align: center;
+}
+
+main {
+  height: 100%;
+  padding: 1em 2em;
+}
+
+footer {
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+  border: 1px solid #CCC;
+  background: none;
+  border-radius: 4px;
+  padding: 1.5em 3em;
+  cursor: pointer;
+}
+
+button:hover {
+  color: #FFF;
+  background: #CCC;
+}
+
+button:active {
+  color: #FFF;
+  background: #AAA;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
