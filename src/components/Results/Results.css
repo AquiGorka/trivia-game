@@ -1,0 +1,13 @@
+.Results li {
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  grid-gap: 1em;
+}
+
+.Results__restart {
+  padding: 1em;
+  text-align: center;
+}
