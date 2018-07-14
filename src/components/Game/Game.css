@@ -1,0 +1,30 @@
+.Game {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.Game__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Game__card {
+  border: 1px solid #000;
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Game__current {
+  padding: 1em;
+  text-align: center;
+}
+
+.Game__footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 2em;
+}

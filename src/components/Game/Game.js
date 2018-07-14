@@ -1,5 +1,6 @@
 import React, { Component, Fragment, Children, cloneElement } from 'react';
 import { RESULTS } from '../Results/Results';
+import './Game.css'
 
 const GAME = 'game';
 
@@ -24,7 +25,7 @@ class Store extends Component {
       return;
     }
     // c'est fini
-    if (answers.length === 10) {
+    if (answers.length === questions.length) {
       flux({ mode: RESULTS, questionSelected: null });
       return;
     }
@@ -83,17 +84,25 @@ const View = props => {
 
   return (
     <Fragment>
-      <div>{category}</div>
-      <button onClick={() => answersPost({ answer: 'false', question })}>
-        False
-      </button>
-      <button onClick={() => answersPost({ answer: 'true', question })}>
-        True
-      </button>
-      <div>
-        {answers.length + 1} of {questions.length}
-      </div>
-      <div>{question}</div>
+      <header>
+        <h2>{category}</h2>
+      </header>
+      <main className="Game">
+        <div className="Game__body">
+        <div className="Game__card">{question}</div>
+        <div className="Game__current">
+          {answers.length + 1} of {questions.length}
+        </div>
+        </div>
+        <div className="Game__footer">
+          <button onClick={() => answersPost({ answer: 'false', question })}>
+            False
+          </button>
+          <button onClick={() => answersPost({ answer: 'true', question })}>
+            True
+          </button>
+        </div>
+      </main>
     </Fragment>
   );
 };
